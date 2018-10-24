@@ -2,13 +2,17 @@
 
 A [Gatsby](https://www.gatsbyjs.org) plugin to use Segments open-source analytics library (analytics.js) **WITHOUT using the paid Segment service (segment.com)**.
 
-If you want an easy-to-configure `analytics.js`-wrapper for your analytics (**Google Analytics, Mixpanel, Hotjar, YouNameIt, ...**), then this is your go-to! Basically **ALL big analytics-integrations are supported**.
+## Pitch
+The concept of analytics.js is awesome. **BUT Segments's  free tier (max 1.000 monthly users) might not work for you**, if you have a lot of non-paying visitors on your website.
 
-It is open source, unlimited and free forever!
+So if you want an **easy-to-configure** `analytics.js`-wrapper for your analytics (**Google Analytics, Mixpanel, Hotjar, YouNameIt, ...**), then this is your go-to! Basically **ALL big analytics-integrations are supported**.
 
-Background (state 2018-10-24): Segment.com has aggressive pay-or-leave policies, which they will apply after you hit the 1000 free monthly users limit. They will lock your account and stop processing your events after a deadline.
+**This solution is open source, unlimited and free forever!**
 
-Details:
+*Background (state 2018-10-24): Segment.com has aggressive pay-or-leave policies, which they will apply after you hit the 1000 free monthly users limit. They will lock your account and stop processing your events after a deadline.*
+
+## Details
+
  * **Best-practise loading of analytics.js**: This plugin loads [Segments analytics.js](https://github.com/segmentio/analytics.js) following [best-practises](http://www.ianww.com/blog/2017/08/06/analytics-js-standalone-library/) and enables you to easily set options (`cdnUrl` and `services`) via Gatsby-config.
  * **Unlimited and free**: You'll use the free analytics.js and not depend on Segment (which has aggressive pay-or-leave policies, after you hit the 1000 free monthly users)
  * **Auto-Track route changes**: Routes are **automatically** tracked via `analytics.page()` via Gatsby
