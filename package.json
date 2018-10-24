@@ -28,7 +28,6 @@
     "react": "^15.0.0-0 || ^16.0.0-0"
   },
   "dependencies": {
-    "@segment/snippet": "^4.0.1",
     "babel-plugin-transform-dirname-filename": "^1.1.0",
     "fs": "0.0.1-security",
     "lodash": "^4.17.11",
