@@ -1,7 +1,7 @@
 {
   "name": "gatsby-plugin-analytics-without-segment",
   "version": "1.0.0",
-  "description": "A Gatsby plugin for Segment analytics (analytics.js) WITHOUT segment (segment.io)",
+  "description": "A Gatsby plugin to use Segments open-source analytics library (analytics.js) WITHOUT using the paid Segment service (segment.com)",
   "keywords": [
     "analytics",
     "gatsby-plugin",
@@ -15,7 +15,7 @@
     "type": "git",
     "url": "https://github.com/thebarty/gatsby-plugin-analytics-without-segment.git"
   },
-  "author": "Henning Zacher <me@me.com>",
+  "author": "Henning <me@me.com>",
   "scripts": {
     "lint": "standard",
     "build": "npx babel src --out-dir .",
