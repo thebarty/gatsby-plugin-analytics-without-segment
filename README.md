@@ -89,7 +89,13 @@ Check out the supported Integrations (that can be loaded via analytics.js) at ht
 This is project is based on https://gist.github.com/typpo/5e2e4403c60314e04e8b6b257555f6de
  and the related blogpost at http://www.ianww.com/blog/2017/08/06/analytics-js-standalone-library/.
 
-## Contribute
+## Contribute (Development notes)
+
+Copy this to your local `/plugins/gatsby-plugin-analytics-without-segment`-directory.
+Gatsby will prioritise local over remove.
+
+On the command-line, start a second terminal, go to `/plugins/gatsby-plugin-analytics-without-segment`
+and run `npm run build-watch` to auto-compile on file-change from /src to / via babel.
 
 CLI cheatsheat:
 
