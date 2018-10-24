@@ -37,7 +37,7 @@ var getSnippet = function getSnippet(pluginOptions) {
   var source = fs.readFileSync(templatePath, { encoding: 'utf8' });
   var theTemplate = template(source);
   var sourceWithValues = theTemplate({
-    cdnUrl: cdnUrl,
+    cdnUrl: cdnUrl || 'https://cdnjs.cloudflare.com/ajax/libs/analytics.js/2.9.1/analytics.min.js', // default
     services: JSON.stringify(services)
   });
   var result = Terser.minify(sourceWithValues); // see https://www.npmjs.com/package/terser
@@ -49,6 +49,7 @@ var onRenderBody = exports.onRenderBody = function onRenderBody(_ref, pluginOpti
   var setHeadComponents = _ref.setHeadComponents;
 
   if (!pluginOptions) throw new Error('please set options for "gatsby-plugin-analytics-js-without-segment" in gatsby-config or remove this plugin');
+  if (!pluginOptions.services) throw new Error('please set "services"-options for "gatsby-plugin-analytics-js-without-segment" in gatsby-config or remove this plugin. See README for details');
   delete pluginOptions.plugins; // clean up. For some reason gatsby adds empty `.plugins` property
   (0, _tools.log)('pluginOptions', pluginOptions);
   var snippet = getSnippet(pluginOptions);

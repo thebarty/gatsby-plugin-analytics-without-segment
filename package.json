@@ -44,7 +44,7 @@
     "parser": "babel-eslint",
     "ignore": [
       "gatsby-ssr.js",
-      "gatsby-browser.js",
+      "gatsby-browser.js"
     ]
   },
   "bugs": {

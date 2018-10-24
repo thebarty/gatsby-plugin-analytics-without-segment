@@ -2,10 +2,12 @@
 
 A [Gatsby](https://www.gatsbyjs.org)  plugin to use Segments open-source analytics library (analytics.js) **WITHOUT using the paid Segment service (segment.com)**.
 
-WHY? Open source, unlimited and free. Segment has aggressive pay-or-leave policies, which they will apply after you hit the 1000 free monthly users limit. They will lock your account and stop processing your events after a deadline. (State of 24.10.2018)
+WHY? Because it is open source, unlimited and free!
 
-Some details:
- * **Best-practises**: This plugin loads [Segments analytics.js](https://github.com/segmentio/analytics.js) following best-practises and enables you to easily set options (`cdnUrl` and `services`) via Gatsby-config.
+Background (state 2018-10-24): Segment.com has aggressive pay-or-leave policies, which they will apply after you hit the 1000 free monthly users limit. They will lock your account and stop processing your events after a deadline.
+
+Some details about this plugin:
+ * **Best-practises**: This plugin loads [Segments analytics.js](https://github.com/segmentio/analytics.js) following [best-practises](http://www.ianww.com/blog/2017/08/06/analytics-js-standalone-library/) and enables you to easily set options (`cdnUrl` and `services`) via Gatsby-config.
  * **Unlimited and free**: You'll use the free analytics.js and not depend on Segment (which has aggressive pay-or-leave policies, after you hit the 1000 free monthly users)
  * **Auto-Track route changes**: Routes are **automatically** tracked via `analytics.page()` via Gatsby
  * **Track events anywhere**: You can track custom-events anywhere in your code via `analytics.track()`
@@ -24,7 +26,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-analytics-without-segment',
       options: {
-        cdnUrl: 'https://cdnjs.cloudflare.com/ajax/libs/analytics.js/2.9.1/analytics.min.js',
+        cdnUrl: 'https://cdnjs.cloudflare.com/ajax/libs/analytics.js/2.9.1/analytics.min.js',  // host yourself or use cdnjs (https://cdnjs.com/libraries/analytics.js)
         services: {
           // see integration https://github.com/segment-integrations/analytics.js-integration-google-analytics/blob/master/lib/index.js
           'Google Analytics': {
