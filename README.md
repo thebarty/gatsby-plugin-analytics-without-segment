@@ -2,7 +2,7 @@
 
 A [Gatsby](https://www.gatsbyjs.org) plugin to use Segments open-source analytics library (analytics.js) **WITHOUT using the paid Segment service (segment.com)**.
 
-## Pitch
+## Why this package?
 The concept of analytics.js is awesome. **BUT Segments's  free tier (max 1.000 monthly users) might not work for you**, if you have a lot of non-paying visitors on your website.
 
 So if you want an **easy-to-configure** `analytics.js`-wrapper for your analytics (**Google Analytics, Mixpanel, Hotjar, YouNameIt, ...**), then this is your go-to! Basically **ALL big analytics-integrations are supported**.
@@ -20,6 +20,14 @@ So if you want an **easy-to-configure** `analytics.js`-wrapper for your analytic
  * **Supported integrations**: A LOT of analytics-tools are supported. see https://github.com/segment-integrations.
  * **Development-mode**: In development you'll only see the events in the console. Your events will NOT be forwarded
  * **Production-mode**: All events will be routed to the services. Check your console for possible errors.
+
+## INSTALL
+
+Install via npm
+
+```
+npm install gatsby-plugin-analytics-without-segment --save
+```
 
 ## Usage
 
