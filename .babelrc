@@ -1,0 +1,4 @@
+{
+  "plugins": [ "transform-dirname-filename" ],
+  "presets": [ "es2015", "react" ]
+}
