@@ -1,4 +1,4 @@
-# gatsby-plugin-analytics-without-segment
+# Use analytics.js without Segment in Gatsby (gatsby-plugin-analytics-without-segment)
 
 A [Gatsby](https://www.gatsbyjs.org) plugin to use Segments open-source analytics library (analytics.js) **WITHOUT using the paid Segment service (segment.com)**.
 
@@ -11,7 +11,7 @@ So if you want an **easy-to-configure** `analytics.js`-wrapper for your analytic
 
 *Background (state 2018-10-24): Segment.com has aggressive pay-or-leave policies, which they will apply after you hit the 1000 free monthly users limit. They will lock your account and stop processing your events after a deadline.*
 
-## Details
+## Features
 
  * **Best-practise loading of analytics.js**: This plugin loads [Segments analytics.js](https://github.com/segmentio/analytics.js) following [best-practises](http://www.ianww.com/blog/2017/08/06/analytics-js-standalone-library/) and enables you to easily set options (`cdnUrl` and `services`) via Gatsby-config.
  * **Unlimited and free**: You'll use the free analytics.js and not depend on Segment (which has aggressive pay-or-leave policies, after you hit the 1000 free monthly users)
