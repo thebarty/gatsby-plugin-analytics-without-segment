@@ -1,14 +1,15 @@
 {
   "name": "gatsby-plugin-analytics-without-segment",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A Gatsby plugin to use Segments open-source analytics library (analytics.js) WITHOUT using the paid Segment service (segment.com)",
   "keywords": [
     "standalone",
     "free",
     "analytics",
     "analyticsjs",
-    "gatsby-plugin",
+    "analytics.js",
     "gatsby",
+    "gatsby-plugin",
     "without",
     "segment"
   ],
@@ -21,7 +22,7 @@
   "author": "Henning <me@me.com>",
   "scripts": {
     "lint": "standard",
-    "build": "npx babel src --out-dir .",
+    "build": "babel src --out-dir .",
     "build-watch": "npx babel src --out-dir . --watch"
   },
   "peerDependencies": {
