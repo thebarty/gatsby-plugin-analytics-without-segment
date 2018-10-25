@@ -30,11 +30,7 @@
     "react": "^15.0.0-0 || ^16.0.0-0"
   },
   "dependencies": {
-    "babel-plugin-transform-dirname-filename": "^1.1.0",
-    "fs": "0.0.1-security",
-    "lodash": "^4.17.11",
-    "path": "^0.12.7",
-    "terser": "^3.10.2"
+    "analytics-js-without-segment": "^1.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
