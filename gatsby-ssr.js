@@ -13,8 +13,6 @@ var _tools = require('./tools.js');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-__dirname = '/Users/henning/StaticSites/teampilot-gatsby/gatsby/plugins/gatsby-plugin-analytics-without-segment/src';
-
 var fs = require('fs');
 var path = require('path');
 var Terser = require('terser');
