@@ -16,5 +16,5 @@ git commit -m "message"
 git push -all
 
 # publish to npm
-npm run publish;  # build and publish to npm
+npm run publish-to-npm;  # build and publish to npm
 ```

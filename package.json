@@ -24,7 +24,7 @@
     "lint": "standard",
     "build": "babel src --out-dir .",
     "build-watch": "npx babel src --out-dir . --watch",
-    "publish": "npm run build; npm publish .;"
+    "publish-to-npm": "npm run build; npm publish .;"
   },
   "peerDependencies": {
     "react": "^15.0.0-0 || ^16.0.0-0"
