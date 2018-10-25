@@ -16,5 +16,5 @@ git commit -m "message"
 git push -all
 
 # publish to npm
-npm publish gatsby-plugin-analytics-without-segment
+npm run publish;  # build and publish to npm
 ```
